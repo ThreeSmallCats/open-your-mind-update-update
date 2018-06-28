@@ -1,3 +1,5 @@
+
+// 暂时没有使用，滚动是由batter-scroll插件提供
 let startY = 0
 let moveY = 0
 let lastMoveY = 0
