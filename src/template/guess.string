@@ -1,0 +1,5 @@
+<ul class="guess">
+{{#data}}
+    <li class="item" data-answer="{{answer}}">{{title}}</li>
+{{/data}}
+</ul>
