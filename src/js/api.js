@@ -106,9 +106,9 @@ export function itemClickFn() {
     // 创建轮播每一项的点击事件
     for (let i = 0; i < contentLiArr.length; i++) {
         contentLiArr[i].onclick = function (event) {
-
-            let ele = event.target
-            let state = event.target.dataset.state
+            // 修改了这里。。。。。。。。。event.target变成 contentLiArr[i]
+            let ele = contentLiArr[i]
+            let state = contentLiArr[i].dataset.state
             let controlLeft = document.querySelector('.left')
             let controlRight = document.querySelector('.right')
             let twoArr = document.querySelectorAll('.two')
@@ -229,6 +229,19 @@ function ajaxData(showType) {
         // console.log(aboutHtml)
         // 渲染模板
         contentData.innerHTML = html
+        let download = document.querySelector('#download')
+        let androidOrIphone = navigator.userAgent.toLowerCase();
+        download.onclick = function (event) {
+            event = event || window.event
+            if (/iphone|ipad|ipod/.test(androidOrIphone)) {
+                alert('对不起，我们暂时只有安卓的app')
+                event.preventDefault();
+            } else if (/android/.test(androidOrIphone)) {
+
+            } else if (/window/.test(androidOrIphone)) {
+
+            }
+        }
     } else if (showType == 'joke') {
         // 刷新功能
         moreBtn(showType)
