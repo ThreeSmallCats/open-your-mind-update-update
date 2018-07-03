@@ -10,6 +10,6 @@
     <h3>其他作品</h3>
     <h4>.....暂未提供.......</h4>
     <h3>app下载</h3>
-    <h4><a class="iconfont" id='download' href="https://threesmallcats.cn/download/OYM.apk" download="OPY.app">app下载</a></h4>
+    <h4><a class="iconfont" id='download' href="https://threesmallcats.cn/download/OYM.apk" download="OYM.app">app下载</a></h4>
 </div>
 {{/data}}
