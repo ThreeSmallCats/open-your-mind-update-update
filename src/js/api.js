@@ -1,3 +1,10 @@
+/*
+ * @Author: TSCats 
+ * @Date: 2018-07-26 18:12:43 
+ * @Last Modified by: TSCats
+ * @Last Modified time: 2018-10-07 13:53:26
+ */
+
 // 数据仓库
 import * as store from './store.js'
 // 数据请求和模板处理
@@ -291,6 +298,7 @@ function ajaxData(showType) {
 }
 // 笑话数据加载函数
 function jokeData() {
+    contentData.innerHTML = '<span>该接口已经关闭，剩下谜语接口了</span>'
     dataApi.getJoke(dataApi.pages('笑话').oldpage).then((res) => {
         let jokedata = res.showapi_res_body.contentlist
         
