@@ -10,10 +10,8 @@
     <h3>其他作品</h3>
     <h4>.....暂未提供.......</h4>
     <h3>app下载</h3>
-    <h4><a class="iconfont" id='download' href="https://threesmallcats.cn/download/OYM.apk" download="OYM.app">app下载</a></h4>
+    <h4><a class="iconfont" id='download' href="https://tscats.cn/download/OYM.apk" download="OYM.app">app下载</a></h4>
     <h3>联系方式</h3>
     <h4>QQ 437986376</h4>
-    <h4 class='weixin'>微信</h4>
-    <img src='../pic/微信二维码修.png'>
 </div>
 {{/data}}

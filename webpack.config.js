@@ -4,7 +4,7 @@ const extractTextWebpackPlugin = require('extract-text-webpack-plugin');
 var path = require('path');
 var getHtmlConfig = function (name, title) {
     return {
-        template: './src/view/' + name + '.html',
+        template: './src/' + name + '.html',
         title: title,
         // favicon: './favicon.ico',
         filename: name + '.html',
